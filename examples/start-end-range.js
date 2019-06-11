@@ -40,6 +40,7 @@ class Picker extends React.Component {
     const { showValue } = props;
     const calendar = (
       <RangeCalendar
+        showOk={true}
         hoverValue={this.state.hoverValue}
         onHoverChange={this.onHoverChange}
         type={this.props.type}
@@ -66,7 +67,7 @@ class Picker extends React.Component {
                   readOnly
                   value={showValue && showValue.format(fullFormat) || ''}
                 />
-                </span>
+              </span>
             );
           }
         }
