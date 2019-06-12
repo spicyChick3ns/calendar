@@ -89,6 +89,7 @@ class Picker extends React.Component {
   }
 
   onCalendarSelect = (value, cause = {}) => {
+    debugger;
     const props = this.props;
     if (!('value' in props)) {
       this.setState({

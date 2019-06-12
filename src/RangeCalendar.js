@@ -594,7 +594,7 @@ class RangeCalendar extends React.Component {
         firstSelectedValue: null,
       });
       this.fireHoverValueChange([]);
-      // this.props.onSelect(selectedValue, cause);
+      this.props.onSelect(selectedValue, cause);
     }
   }
 
